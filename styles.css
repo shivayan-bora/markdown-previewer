@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Winky, Poppins, sans-serif
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 10vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 53%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.text-area-container {
+    margin: 1em;
+    height: 100%;
+}
+
+.text-area-header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-area-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-btn,
+.clear-btn {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    background: #03235a;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.download-btn:hover,
+.clear-btn:hover {
+    background: #07b4d6;
+}
+
+.download-btn {
+    margin-right: 0.5em;
+}
+
+textarea {
+    height: unset;
+    width: unset;
+}
+
+.text-area {
+    border: 1px solid #000;
+    display: block;
+    width: 40vw;
+    padding: 1em;
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 1em;
+}
+
+.markdown-area-container {
+    margin: 1em;
+    height: 100%;
+}
+
+.markdown-area {
+    border: 1px solid #000;
+    padding: 1em;
+    width: 40vw;
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        display: block;
+    }
+
+    .text-area-container {
+        width: 75vw !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .text-area-header-container {
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+    }
+
+    .text-area {
+        width: 100%;
+    }
+
+    .markdown-area-container {
+        width: 75vw !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .content-header {
+        margin: 1em 0;
+        align-self: flex-start;
+    }
+
+    .markdown-area {
+        width: 100%;
+    }
+
+}

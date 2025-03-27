@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Parser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Markdown Parser</h1>
+    </header>
+    <div class="container">
+      <div class="text-area-container">
+        <div class="text-area-header-container">
+          <h2 class="text-area-header">Markdown Editor</h2>
+          <div class="text-area-btn-container">
+            <button class="download-btn" onclick="downloadMarkdown()">
+              Download
+            </button>
+            <button class="clear-btn" onclick="clearMarkdown()">Clear</button>
+          </div>
+        </div>
+        <textarea class="text-area"></textarea>
+      </div>
+
+      <div class="markdown-area-container">
+        <h2 class="content-header">Preview</h2>
+        <div class="markdown-area"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
